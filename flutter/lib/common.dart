@@ -3364,7 +3364,7 @@ Widget loadPowered(BuildContext context) {
     cursor: SystemMouseCursors.click,
     child: GestureDetector(
       onTap: () {
-        launchUrl(Uri.parse('https://t.me/liran1226'));
+        launchUrl(Uri.parse(''));
       },
       child: Opacity(
           opacity: 0.5,

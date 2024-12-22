@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["154.82.84.235"];
-pub const PUBLIC_RS_PUB_KEY: &str = "qgPL02uEPCoja4T5qqLLEwKSsFolofXXUyHBtWxI5b0=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["206.238.40.34"];
+pub const PUBLIC_RS_PUB_KEY: &str = "MO3oLY8DOI4SfIMqu0EpmmljON5avsZ0H9X1LVF2rkE=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,

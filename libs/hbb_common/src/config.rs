@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["206.238.43.212"];
-pub const PUBLIC_RS_PUB_KEY: &str = "QfXEsuXKIvj4xa1Gx2evUEZ5Y7m6buMGxDmmk56g+fo=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["206.238.115.78"];
+pub const PUBLIC_RS_PUB_KEY: &str = "2AmgM5A3YTK9zH5XP4+Fy4eUEVyN6blNJS1Fj3M6iC8=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
@@ -1711,7 +1711,7 @@ impl UserDefaultConfig {
     pub fn get(&self, key: &str) -> String {
         match key {
             #[cfg(any(target_os = "android", target_os = "ios"))]
-            keys::OPTION_VIEW_STYLE => self.get_string(key, "original", vec!["adaptive"]),
+            keys::OPTION_VIEW_STYLE => self.get_string(key, "adaptive", vec!["original"]),
             #[cfg(not(any(target_os = "android", target_os = "ios")))]
             keys::OPTION_VIEW_STYLE => self.get_string(key, "adaptive", vec!["original"]),
             keys::OPTION_SCROLL_STYLE => self.get_string(key, "scrollauto", vec!["scrollbar"]),
